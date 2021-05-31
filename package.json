@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": " nodemon scr/app.js -e js,hbs"
+    "dev": " nodemon scr/app.js -e js,hbs",
+    "start": "node scr/app.js"
+      
   },
   "author": "",
   "license": "ISC",
