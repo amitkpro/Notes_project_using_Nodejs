@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8/">
+        <meta name="viewport" content="width=device-width ,intial-scale=1.0" />
+        <meta http-equiv="X-UA-compatible" class="ie=edge"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Sign Up</title>
+    
+    
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1> User Login</h1>
+            <form class="login-form " method="post" name="form" action="/index" onsubmit="return">
+                <div class="font"> Email or Phone</div>
+                <input type="text" name="email" required>
+                <div id="email-error"> Please Fill up your Email or Phone number </div>
+                <div class="font font2"> Password</div>
+                <input type="password" name="password" required>
+                <div id="pass-error"> Fill Password </div>
+                <button type="submit">Submit</button>
+                
+            </form>
+            <div class="register">
+                <h3>Don't have account</h3>
+                <a class="button" href="register.hbs">Registration</a>
+                <!--
+                <script type="text/javascript">
+                    const Registration =document.querySelectorAll('a');
+                    Registration.forEach( btn =>{
+                        btn.addEventListener('click', function(e){
+                            let x = e.clientX - e.target.offsetLeft;
+                            let y = e.clientY - e.target.offsetTop;
+                            
+                            let ripples =document.createElement('span');
+                            ripples.style.left= x +'px';
+                            ripples.style.top= y +'px';
+                            this.appendChild(ripples);
+                            setTimeout(() =>{
+                                ripples.remove()
+                            } ,1000 ) ;
+                            
+                        })
+                    } )
+                
+                </script>
+                -->
+            </div>
+        </div>
+        
+        
+        
+    </body>
+    
+</html>

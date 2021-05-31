@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="regform"><h1>Registration Form</h1></div>
+    <div class="main">
+    
+        <form  action="/notes" method="POST">
+            <div id="name">
+                <h2 class="name">Name </h2>
+                <input class="firstname" type="text" name="first_name"  required><br>
+                <label class="firstlabel">first name</label>
+                <input class="lastname" type="text" name="last_name" required><br>
+                <label class="lastlabel">last name</label>
+            </div>
+            <h2 class="name">Email</h2>
+            <input class="email" type="email" name="email" required>
+            
+            <h2 class="name">Password </h2>
+            <input class="company" type="password" name="password">
+            <small ><a class="smal" href="password.html">Password suggestion</a> </small>
+            
+            <h2 class="name">Phone</h2>
+            <input class="Code" type="text" name="area_code" required>
+            <label class="area-code">Area Code</label>
+            <input class="number" type="text" name="phone" required>
+            <label class="phone-number">Phone Number</label>
+    
+      <!--
+            <h2 class="name">Subject</h2>
+            <select class="option" name="subject">
+                <option disabled="disabled" selected="selected">--Choose option--</option>
+                <option>Student</option>
+                <option>Professional</option>
+            </select>
+            
+    -->        
+    
+    
+            <h2 id="coustomer">Gender</h2>
+            <label class="radio">
+                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
+                <span class="checkmark"></span>
+                Male
+            </label>
+    
+            <label class="radio">
+                <input class="radio-two" type="radio" name="rdiobtn">
+                <span class="checkmark"></span>
+                Female
+            </label>
+    
+            <button type="submit">REGISTER</button>
+    
+    
+        </form>
+    
+    </div>
+    <div class="bubbles">
+        <img src="img/bubble.png">
+        <img src="img/bubble.png">
+        <img src="img/bubble.png">
+        <img src="img/bubble.png">
+        <img src="img/bubble.png">
+        <img src="img/bubble.png">
+        <img src="img/bubble.png">
+    </div>
+
+</body>
+</html>
