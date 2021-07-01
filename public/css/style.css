@@ -63,6 +63,8 @@ h1{
 }
 
 
+
+
 /*        ------ button ------ */
 
 /*
@@ -79,8 +81,8 @@ h1{
     transition: background-color 0.2, border 0.2, color 0.2;
 }
 */
-a:active,
-a:hover,
+.btn:active,
+.btn:hover,
 .login-form button:active,
 .login-form button:hover{
     color: #ffffff;
@@ -121,7 +123,7 @@ a:hover,
 
 /*    -------links-------    */
 
-a,
+.btn,
 .login-form button{
     position: relative;
     padding: 12px 36px;
@@ -139,6 +141,24 @@ a,
     
 }
 
+/* foreget pass */
+.forget{
+    position: right;
+    padding: 0px  3px;
+    color: rgba(152, 52, 15, 0.88);
+    background: none;
+    font-size: 12px;
+    margin-left: 25%;
+    text-align: right;
+    background-size: 10px;
+    margin-top: -20px;
+}
+
+.msgForOtp{
+    background-color: rgba(255, 0, 0, 0.95);
+    text-align:start;
+    position: static;
+}
 
 
 span{

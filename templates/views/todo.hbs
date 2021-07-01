@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.min.js"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>Event List</h1>
+    <div class="todo " >
+        <div>
+            <div class="todo-input todo-block">
+                <span>Todo-List</span>
+                <input type="text" placeholder="Enter New Event"> 
+                <span>Category</span>
+                <input type="text" placeholder="Category" list="categoryList">
+                <datalist id="categoryList">
+                    <option value="Personal"></option>
+                    <option value="Work"></option>
+                </datalist>
+                <span>Date</span>
+                <input type="date" id="dateInput">
+                <span>Time</span>
+                <input type="time" id="timeInput">
+                <span></span>
+                <button id="addbtn">Add</button>
+                <span></span>
+                <button id="sortBtn">Sort</button>
+                <span></span>
+                <label><input type="checkbox" id="shortenList">Incomplete Events First</label>
+            </div>    
+                
+            <table id="todoTable" class="todo-block">
+                <tr>
+                    <td></td>
+
+                    <td>Date</td>
+                    <td>Time</td>
+                    <td>To-do list</td>
+                    <td>
+                        <select id="filterList">
+                            <option value=""></option>
+                            
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        
+        </div>
+        <div class="todo-calendar todo-block">
+            <div id="calendar"></div>    
+        </div>
+    </div> 
+</body>
+
+<script src="js/newTodo.js"></script>
+</html>

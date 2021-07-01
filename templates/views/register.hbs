@@ -1,3 +1,13 @@
+<!--
+<% if(message.length > 0) { %>
+    <div class="alert alert-success">
+        <%= message %>
+    </div>
+
+    <% } %>
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +20,7 @@
     <div class="regform"><h1>Registration Form</h1></div>
     <div class="main">
     
-        <form  action="/notes" method="POST">
+        <form  action="/register" method="POST">
             <div id="name">
                 <h2 class="name">Name </h2>
                 <input class="firstname" type="text" name="first_name"  required><br>

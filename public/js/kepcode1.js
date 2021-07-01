@@ -1,5 +1,6 @@
 const addButton=document.querySelector('#add');
 const plus=document.querySelector('#plus');
+var i = 0;
 //const mode=document.getElementById('mode');
 const updatelsData=()=>{
 	const textAreaData=document.querySelectorAll('textarea');
@@ -26,6 +27,8 @@ const updatelsData=()=>{
 }*/
 
 const addNewNote=(text=' ')=>{
+    i = i+1 ;
+    if( i < 7){
 	const note=document.createElement('div');
 	note.classList.add('note');
 	const htmlData=`<div class="operation">
@@ -87,6 +90,10 @@ const addNewNote=(text=' ')=>{
 		updatelsData1();
 	})*/           
 	document.body.appendChild(note);
+    } else{
+        alert( ' You have to login for add more notes ')
+        
+        }
 }
 const notes=JSON.parse(localStorage.getItem('notes'));
 //const head=JSON.parse(localStorage.getItem('head'));

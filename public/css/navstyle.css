@@ -53,22 +53,23 @@ transition:all 0.3s ease;
 		width:60%;
 	}
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
 	body{
 		overflow-x: hidden;
                 
 	}
+
 	.links{
 		position:absolute;
 		right:0px;
-		top:8vh;
+		top:12vh;
 		height:92vh;
 		display:flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 		background-color: orange;
-		width:50%;
+		width:44%;
 		transform:translateX(100%);
 		transition: transform 0.5s ease-in;
 

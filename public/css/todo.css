@@ -1,0 +1,78 @@
+.strike {
+	text-decoration: line-through;
+}
+
+input:checked + span {
+	/* ~span */
+	border: 2px solid powderblue;
+}
+
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+body {
+	color: #ff8303;
+	background-color: #171717;
+}
+
+.todo-input {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 1rem;
+}
+
+#todoTable {
+	margin-top: 1rem;
+}
+
+.todo-block {
+	border: 2px solid #a35709;
+	padding: 1rem;
+	border-radius: 2rem;
+	/* background-color: #a35709; */
+}
+
+#calendar {
+	background-color: white;
+}
+
+/* for tablets and laptops */
+@media screen and (min-width: 768px) {
+	.todo {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 1rem;
+	}
+
+	#calendar {
+		position: sticky;
+		top: 0;
+	}
+}
+
+/* for smaller screens */
+@media screen and (max-width: 767px) {
+	#todoTable,
+	.todo-calendar {
+		margin-top: 1rem;
+	}
+}
+
+input,
+select {
+	color: #ff8303;
+}
+
+::placeholder {
+	color: #ff8303;
+}
+
+::-webkit-input-placeholder {
+	color: #ff8303;
+}
+
+::-ms-input-placeholder {
+	color: #ff8303;
+}

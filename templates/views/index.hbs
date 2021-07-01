@@ -13,19 +13,22 @@
     <body>
         <div class="container">
             <h1> User Login</h1>
-            <form class="login-form " method="post" name="form" action="/index" onsubmit="return">
+            <form class="login-form " method="post" name="form" action="/index" >
                 <div class="font"> Email or Phone</div>
                 <input type="text" name="email" required>
                 <div id="email-error"> Please Fill up your Email or Phone number </div>
                 <div class="font font2"> Password</div>
-                <input type="password" name="password" required>
+                <input class="inputfield" type="password" name="password" required>
+                
                 <div id="pass-error"> Fill Password </div>
                 <button type="submit">Submit</button>
+                <small ><a class="forget" href="forget-password">Forget Password</a> </small>
+                
                 
             </form>
             <div class="register">
                 <h3>Don't have account</h3>
-                <a class="button" href="register.hbs">Registration</a>
+                <a class="btn" href="register">Registration</a>
                 <!--
                 <script type="text/javascript">
                     const Registration =document.querySelectorAll('a');
